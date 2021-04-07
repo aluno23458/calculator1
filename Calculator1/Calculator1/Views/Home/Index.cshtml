@@ -3,117 +3,84 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">My Calculator</h1>
-   
+    <h1 class="display-4">Calculator</h1>
 </div>
-
-<!-- start of my calculator   -->
 <form method="post">
+
+    <input type="hidden" value="@ViewBag.ChoosenOperator" name="ChoosenOperator" />
+    <input type="hidden" value="@ViewBag.Operator" name="Operator" />
+    <input type="hidden" value="@ViewBag.FirstOperator" name="FirstOperator" />
+    <input type="hidden" value="@ViewBag.Clear" name="Clear" />
+
     <table border="1">
         <tr>
             <td colspan="4">
-                <input type="text" readonly="readonly" value="0" />
+                <input type="text" name="Display" value="@ViewBag.Display" readonly="readonly" />
             </td>
         </tr>
-
         <tr>
             <td colspan="2">
-                <input type="submit" value="C" name="bt" />
+                <input type="submit" value="C" name="button" class="btn" />
             </td>
-
             <td>
-                <input type="submit" value="+/-" name="bt" />
+                <input type="submit" value="/" name="button" class="btn" />
             </td>
-
             <td>
-                <input type="submit" value="%" name="bt" />
+                <input type="submit" value="x" name="button" class="btn" />
             </td>
-
         </tr>
-
         <tr>
             <td>
-                <input type="submit" value="7" name="bt" />
+                <input type="submit" value="7" name="button" class="btn" />
             </td>
-
             <td>
-                <input type="submit" value="8" name="bt" />
+                <input type="submit" value="8" name="button" class="btn" />
             </td>
-
             <td>
-                <input type="submit" value="9" name="bt" />
+                <input type="submit" value="9" name="button" class="btn" />
             </td>
-
             <td>
-                <input type="submit" value="x" name="bt" />
+                <input type="submit" value="-" name="button" class="btn" />
             </td>
-
-
-
         </tr>
-
-
         <tr>
             <td>
-                <input type="submit" value="4" name="bt" />
+                <input type="submit" value="4" name="button" class="btn" />
             </td>
-
             <td>
-                <input type="submit" value="5" name="bt" />
+                <input type="submit" value="5" name="button" class="btn" />
             </td>
-
             <td>
-                <input type="submit" value="6" name="bt" />
+                <input type="submit" value="6" name="button" class="btn" />
             </td>
-
             <td>
-                <input type="submit" value="-" name="bt" />
+                <input type="submit" value="+" name="button" class="btn" />
             </td>
-
-
-
         </tr>
-
         <tr>
             <td>
-                <input type="submit" value="1" name="bt" />
+                <input type="submit" value="1" name="button" class="btn" />
             </td>
-
             <td>
-                <input type="submit" value="2" name="bt" />
+                <input type="submit" value="2" name="button" class="btn" />
             </td>
-
             <td>
-                <input type="submit" value="3" name="bt" />
+                <input type="submit" value="3" name="button" class="btn" />
             </td>
-
-            <td>
-                <input type="submit" value="+" name="bt" />
+            <td rowspan="2">
+                <input type="submit" value="=" name="button" class="btn" />
             </td>
-
-
         </tr>
-
-
         <tr>
             <td>
-                <input type="submit" value="0" name="bt" />
+                <input type="submit" value="0" name="button" class="btn" />
             </td>
-
             <td>
-                <input type="submit" value="," name="bt" />
+                <input type="submit" value="," name="button" class="btn" />
             </td>
-
             <td>
-                <input type="submit" value="=" name="bt" />
+                <input type="submit" value="+/-" name="button" class="btn" />
             </td>
-
-
-
-
-
         </tr>
-
-
     </table>
 </form>

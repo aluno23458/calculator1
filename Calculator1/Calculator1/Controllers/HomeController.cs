@@ -22,7 +22,7 @@ namespace Calculator1.Controllers
 
 
         // First call to the view
-        [HttpGet] //first call to the view
+        [HttpGet] 
         public IActionResult Index()
         {
             //to process the values and decide what to do with them
@@ -110,7 +110,7 @@ namespace Calculator1.Controllers
                     FirstOperator = "";
                     Clear = "S";
                     break;
-                    break;
+                   
             }
             //sending the value from the display to the view
             ViewBag.Display = Display;
